@@ -1,7 +1,8 @@
 # SDN Ryu-Controller -- Load-Balancing with Dynamic-Routing
 SDN Ryu controller  with Load Balancing and dynamic routing
 
-Project during which I have created Ryu controller which performs BFS algorithm to find best path and calculate all costs. The costs are being calculated in the background every second (action performed by thread) and best path is auto adjusting. Discover of topology is done automatically so we don't have to have specially prepare topology.
+OpenFlow version used: OpenFlow 1.3
+Description: Project during which I have created Ryu controller which performs BFS algorithm to find best paths, based on traffic flowing through links optimal path is being choosen from possible paths. The costs are being calculated in the background (action performed by thread) and optimal path is being updated every second based on the gathered stats. Discover of topology is done automatically so we don't have to have specially prepared topology.
 
 Based on: 
   https://ryu.readthedocs.io/en/latest/ryu_app_api.html
